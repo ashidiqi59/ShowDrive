@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ShowDrive | @yield('title')</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Font Inter untuk kesan modern -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
     <style>
@@ -42,22 +43,8 @@
     </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg sticky-top">
-        <div class="container">
-            <a class="navbar-brand" href="/">SHOWDRIVE</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto align-items-center">
-                    <li class="nav-item"><a class="nav-link text-white mx-3" href="#">INVENTORY</a></li>
-                    <li class="nav-item"><a class="nav-link text-white mx-3" href="#">BRANDS</a></li>
-                    <li class="nav-item"><a class="btn btn-outline-gold ms-3" href="#">ADMIN LOGIN</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
 
+    @include('layouts.navbar')
     @yield('content')
 
     <footer>

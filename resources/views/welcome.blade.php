@@ -39,7 +39,7 @@
                     </div>
                     <h5 class="text-warning mt-2 fw-light">IDR 4,500,000,000</h5>
                     <div class="d-grid mt-3">
-                        <button class="btn btn-outline-gold btn-sm py-2">Beli Sekarang</button>
+                        <a href="{{ url('/inventory/detail') }}" class="btn btn-outline-gold btn-sm py-2 text-decoration-none">INQUIRE NOW</a>
                     </div>
                 </div>
             </div>
